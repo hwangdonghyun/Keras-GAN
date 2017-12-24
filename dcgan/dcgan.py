@@ -50,7 +50,7 @@ class DCGAN():
     def build_generator(self):
 
         noise_shape = (100,)
-        
+
         model = Sequential()
 
         model.add(Dense(128 * 7 * 7, activation="relu", input_shape=noise_shape))
@@ -59,7 +59,7 @@ class DCGAN():
         model.add(UpSampling2D())
         model.add(Conv2D(128, kernel_size=3, padding="same"))
         model.add(Activation("relu"))
-        model.add(BatchNormalization(momentum=0.8)) 
+        model.add(BatchNormalization(momentum=0.8))
         model.add(UpSampling2D())
         model.add(Conv2D(64, kernel_size=3, padding="same"))
         model.add(Activation("relu"))

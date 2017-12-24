@@ -212,7 +212,7 @@ class INFOGAN():
             for j in range(c):
                 axs[i,j].imshow(gen_imgs[j,:,:,0], cmap='gray')
                 axs[i,j].axis('off')
-        fig.savefig("./infogan/images/mnist_%d.png" % epoch)
+        fig.savefig("./images/mnist_%d.png" % epoch)
         plt.close()
 
     def save_model(self):
