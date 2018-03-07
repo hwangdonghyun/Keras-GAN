@@ -8,6 +8,7 @@ from keras.layers.core import Flatten
 from keras.layers import BatchNormalization
 from keras.layers.core import Dense
 from keras.layers import UpSampling2D
+from keras.layers import Input
 from keras.datasets import mnist
 from keras.utils import np_utils
 from keras.optimizers import SGD, RMSprop, Adam
